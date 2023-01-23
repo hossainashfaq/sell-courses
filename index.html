@@ -17,7 +17,8 @@
 
         main {
             display: flex;
-            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .teachers {
@@ -84,6 +85,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-row-gap: 25px;
+        }
+
+        .course-banner img {
+            width: 224px;
+            height: 104px;
         }
     </style>
 </head>
@@ -160,6 +166,14 @@
             </div>
         </section>
         <!-- teacher section end -->
+        <section class="container">
+            <h2 class="section-title">Latest Courses</h2>
+            <div class="courses">
+                <div class="course">
+                    <div class="course-banner"><img src="/images/courses/course-1.png" alt="" srcset=""></div>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>
